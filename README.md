@@ -2,7 +2,11 @@
 Sorts (or gets top K items) from a list of items by pairwise comparison. Operates within the best (known) upper bound for necessary comparisons.
 
 # How to use
-Replace "list_of_values.txt" with any list of items you would like to sort or get the top K items from, where each item is on it's own line. Running the python script "pairwise_sorter.py" will use the selected K, comparator, and selector implementation to get the top K items from your list. By default, K = 5, the comparator gets user choice (you choose which one of two options is better), and uses the tournament selector.
+Replace `list_of_values.txt` with any list of items you would like to sort or get the top K items from, where each item is on its own line. Running the python script `pairwise_sorter.py` will use the selected K, comparator, and selector implementation to get the top K items from your list. By default, K = 5, the comparator gets user choice (you choose which one of two options is better), and uses the tournament selector.
+
+To run, navigate to the root folder in the terminal of your choice and execute the following command:
+
+ `python pairwise_sorter.py`
 
 There are no command line options or gui for this application currently, so if you want to change parameters you will need to do so in code. Most of the other options are for testing purposes, as user choice comparator is the main focus of the app and tournament selector is the best implementation for that use case. However, I should at least add K as a choice in the (command line) interface.
 
