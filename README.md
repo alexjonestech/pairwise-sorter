@@ -34,7 +34,7 @@ ties, but that is a limitation of the existing code and not the model, which eas
 ## How many comparisons are made?
 The best known upper bound for the number of necessary comparisons to get the top K items from a list of N items is
 
-C <= N - K + sum_{i = N + 2 - K}^{N} ceiling(log_2(i))
+![equation](https://latex.codecogs.com/svg.latex?C%28N%2CK%29%20%5Cleq%20N%20-%20K%20&plus;%20%5Csum%5Climits_%7Bj%20%3D%20N%20&plus;%202%20-%20K%7D%5E%7BN%7D%20%5Clceil%20%5Clg%28j%29%5Crceil)
 
 For the provided list, N = 141 and K = 5, and so this evaluates to C <= 168. In my various tests, the number of comparisons were always between 163 and 165. The fact
 that this algorithm operates within the known bound in wholly unsurprising when considering that the proof for this bound is done by constructing (a mathematical model
@@ -48,7 +48,7 @@ approximation of one), I believe average case could actually be brought down som
 
 It is also worth noting that a variant of this problem exists where the top K elements are not ranked among themselves, and in this case the best upper bound is
 
-C <= N - K + (K - 1)*ceiling(log_2(N + 2 - K))
+![equation](https://latex.codecogs.com/svg.latex?C%28N%2CK%29%20%5Cleq%20N%20-%20K%20&plus;%20%28K-1%29%5Clceil%5Clg%28N&plus;2-K%29%29%5Crceil)
 
 which you may recognize as identical to the one above, but with each element of the sum replaced with the smallest one. The algorithm/proof for this one is a bit more
 complicated, but is a bit more efficient for the cases it covers. It's actually an algorithm for getting the Kth top item from the list, and the unsorted (K-1)st to 1st
