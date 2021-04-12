@@ -52,7 +52,7 @@ It is also worth noting that a variant of this problem exists where the top K el
 
 which you may recognize as identical to the one above, but with each element of the sum replaced with the smallest one. The algorithm/proof for this one is a bit more
 complicated, but is a bit more efficient for the cases it covers. It's actually an algorithm for getting the Kth top item from the list, and the unsorted (K-1)st to 1st
-top items pop out for free. This is not implemented here since it's not exactly the case I wanted to consider, but I may add it in later anyways.
+top items pop out for free. This difference is negligible to none for the case where K is small (no difference for (N,K) = (141,5)). This is not implemented here since it's not exactly the case I wanted to consider, but I may add it in later anyways just as a challenge.
 
 ## Where can I read more about these kinds of algorithms?
 Donald Knuth's "The Art of Computer Programming" is the go-to resource for all your algorithm needs. This particular class of problems is covered in Volume 3, 
