@@ -53,3 +53,10 @@ C <= N - K + (K - 1)*ceiling(log_2(N + 2 - K))
 which you may recognize as identical to the one above, but with each element of the sum replaced with the smallest one. The algorithm/proof for this one is a bit more
 complicated, but is a bit more efficient for the cases it covers. It's actually an algorithm for getting the Kth top item from the list, and the unsorted (K-1)st to 1st
 top items pop out for free. This is not implemented here since it's not exactly the case I wanted to consider, but I may add it in later anyways.
+
+## Where can I read more about these kinds of algorithms?
+Donald Knuth's "The Art of Computer Programming" is the go-to resource for all your algorithm needs. This particular class of problems is covered in Volume 3, 
+Chapter 5.3.3, aptly named "Minimum-Comparison Selection" (at least in the 1998 2nd edition printing). I highly recommend anyone interested in algorithm design to flip 
+through these texts. They are absolutely massive (just Volume 3 is nearly 800 pages!), and reading them front to back is a daunting task to say the least. However, it's 
+not too hard to jump in to any section that sounds interesting and learn a new algorithm or two.
+any point
