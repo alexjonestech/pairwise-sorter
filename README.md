@@ -36,7 +36,7 @@ The best known upper bound for the number of necessary comparisons to get the to
 
 ![equation](https://latex.codecogs.com/svg.latex?C%28N%2CK%29%20%5Cleq%20N%20-%20K%20&plus;%20%5Csum%5Climits_%7Bj%20%3D%20N%20&plus;%202%20-%20K%7D%5E%7BN%7D%20%5Clceil%20%5Clg%28j%29%5Crceil)
 
-For the provided list, N = 141 and K = 5, and so this evaluates to C <= 168. In my various tests, the number of comparisons were always between 163 and 165. The fact
+For the provided list, N = 141 and K = 5, and so this evaluates to C ≤ 168. In my various tests, the number of comparisons were always between 163 and 165. The fact
 that this algorithm operates within the known bound in wholly unsurprising when considering that the proof for this bound is done by constructing (a mathematical model
 of) the exact algorithm implemented here.
 
